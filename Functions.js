@@ -1,20 +1,22 @@
 /* В терминале оплаты сохранено ваше имя, напишите функцию для определения 
 имени в терминале(если вы ввели ваше имя, то привет + имя, если нет, то нет такого имени)*/
-function getAccess() {
-  let currenUserName = prompt("Ваше имя, сэр","");
-  return (currenUserName == "Артем")? ("Привет" + " " + currenUserName) : 'Нет такого имени';
-  };
-console.log(getAccess());
+function getAccess(Name) {
+  return Name === "Артем" ? `Привет ${Name}` : "Нет такого имени";
+}
+console.log(getAccess("Артем"));
 
 //Напишите функцию вычисления типа аргумента и вывод типа в консоль
-let func = (a) => typeof (a);
-console.log(func(3)) //Number
+let getTypeOfArgument = (a) => typeof a;
+{
+  console.log(getTypeOfArgument(3));
+}
+//Number
 
 //Напишите функцию, которая определяет является ли число простым или нет
-function defNumb(n) {
-  for(x = 2; x < n; x++) {
-  if(n % x == 0)
-  return "Не является простым"; 
-  } return "Является простым";
-  };
-console.log(defNumb(77));
+function definesNumber(n) {
+  for (let x = 2; x < n; x++) {
+    if (n % x === 0) return "Не является простым";
+  }
+  return "Является простым";
+}
+console.log(definesNumber(77));
