@@ -6,7 +6,7 @@ function getAccess(Name) {
 console.log(getAccess("Артем"));
 
 //Напишите функцию вычисления типа аргумента и вывод типа в консоль
-let getTypeOfArgument = (a) => typeof a;
+const getTypeOfArgument = (a) => typeof a;
 {
   console.log(getTypeOfArgument(3));
 }
