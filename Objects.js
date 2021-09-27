@@ -6,7 +6,7 @@ const car = {
 };
 car.color = "Зеленый";
 car.power = function (car) {
-  let EnginePower = prompt("Мощность двигателя", "");
+  let EnginePower = 66;
   if (+EnginePower) {
     console.log(`Мощность двигателя : ${EnginePower}`);
   } else {
