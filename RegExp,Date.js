@@ -7,7 +7,7 @@ console.log(result);
 
 //Дана строка '2+3 223 2223'. Напишите регулярку, которая найдет строку 2+3, не захватив остальные
 const str2 = "2+3 223 2223";
-const regexp2 = /2\+3/;
+const regexp2 = /2\+3/g;
 const res = str2.match(regexp2);
 console.log(res);
 
